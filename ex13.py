@@ -29,10 +29,12 @@ def average(list_data):
 
 
 if __name__ == '__main__':
+    print('Calculate Sum Check')
     print(calculateSum([]) == 0)
     print(calculateSum([2, 4, 6, 8, 10]) == 30)
     print(calculateProduct([]) == 1)
     print(calculateProduct([2, 4, 6, 8, 10]) == 3840)
+    print('\nCalculate Average Check')
     print(average([1, 2, 3]) == 2)
     print(average([1, 2, 3, 1, 2, 3, 1, 2, 3]) == 2)
     print(average([12, 20, 37]) == 23)
