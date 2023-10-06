@@ -40,6 +40,6 @@ if __name__ == '__main__':
     print(average([12, 20, 37]) == 23)
     print(average([0, 0, 0, 0, 0]) == 0)
 
-#TEST3
+#TEST4
 
 # %%
