@@ -18,7 +18,7 @@ def area(length, width):
     return length * width
 
 
-def perimeter(param1, param2):
+def perimeter(length, width):
     """
     Calculate the perimeter of a rectangle.
 
@@ -29,8 +29,8 @@ def perimeter(param1, param2):
     Returns:
         float: The perimeter of the rectangle.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    return length + width + length + width
 
 
 def volume(param1, param2, param3):
