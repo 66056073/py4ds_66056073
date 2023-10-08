@@ -33,7 +33,7 @@ def perimeter(length, width):
     return length + width + length + width
 
 
-def volume(param1, param2, param3):
+def volume(length, width, height):
     """
     Calculates the volume of an object given its length, width, and height.
 
@@ -45,8 +45,8 @@ def volume(param1, param2, param3):
     Returns:
         float: The volume of the object.
     """
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    return length * width * height
 
 
 def surface_area(param1, param2, param3):
