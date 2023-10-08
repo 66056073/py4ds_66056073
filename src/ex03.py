@@ -16,5 +16,7 @@ def is_odd(num):
     # FIX : complete this
     return num % 2 == 1
 
+
 def is_even(num):
-    pass
+    # FIX : complete this
+    return num % 2 == 0
