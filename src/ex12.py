@@ -3,7 +3,7 @@ Execise 12
 """
 
 
-def get_smallest(param):
+def get_smallest(num_list):
     """
     Get the smallest number from a list of numbers.
 
@@ -13,4 +13,11 @@ def get_smallest(param):
     Returns:
         int or None: The smallest number from the list. If the list is empty, returns None.
     """
-    pass
+    if num_list.__len__() == 0:
+        return None
+    else:
+        smallest = num_list[0]
+        for i in range(num_list.__len__()):
+            if smallest > num_list[i]:
+                smallest = num_list[i]
+        return smallest
