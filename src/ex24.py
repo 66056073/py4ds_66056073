@@ -17,4 +17,33 @@ def get_time_every_15_min():
         str: The generated time string.
     """
     # TODO : complete this
-    pass
+    minute = 15
+    print('12:00 am')
+    for i in range(3):
+        print('12:' + str(minute) + ' am')
+        minute += 15
+    minute = 15
+
+    for i in range(1, 12):
+        print(str(i) + ':00 am')
+        for j in range(3):
+            print(str(i) + ':' + str(minute) + ' am')
+            minute += 15
+        minute = 15
+
+    print('12:00 pm')
+    for i in range(3):
+        print('12:' + str(minute) + ' pm')
+        minute += 15
+    minute = 15
+    for i in range(1, 12):
+        print(str(i) + ':00 pm')
+        for j in range(3):
+            print(str(i) + ':' + str(minute) + ' pm')
+            minute += 15
+        minute = 15
+
+
+if __name__ == '__main__':
+    get_time_every_15_min()
+
