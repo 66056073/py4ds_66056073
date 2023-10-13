@@ -28,7 +28,7 @@ def find_and_replace(text, old_str, new_str):
     Returns:
         str: The modified text with all occurrences of old_str replaced with new_str.
     """
-    # TODO : complete this
+    # FIX : complete this
     i = 0
     while i < text.__len__():
         if text[i:i+old_str.__len__()] == old_str:
@@ -37,8 +37,3 @@ def find_and_replace(text, old_str, new_str):
         else:
             i += 1
     return text
-
-
-
-
-#%%
