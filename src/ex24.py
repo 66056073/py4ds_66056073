@@ -16,7 +16,7 @@ def get_time_every_15_min():
     Returns:
         str: The generated time string.
     """
-    # TODO : complete this
+    # FIX : complete this
     minute = 15
     print('12:00 am')
     for i in range(3):
