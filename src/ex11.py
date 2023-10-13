@@ -3,7 +3,7 @@ Exercise 11
 """
 
 
-def get_hr_min_sec(param):
+def get_hr_min_sec(tsec):
     """
     Generates a string representation of the given number
     of seconds in the format "9h 9m 9s".
@@ -22,4 +22,26 @@ def get_hr_min_sec(param):
         >>> get_hr_min_sec(0)
         '0s'
     """
-    pass
+    s = tsec % 60
+    m = (tsec // 60) % 60
+    h = (tsec // 60) // 60
+
+    if h > 0:
+        if m > 0:
+            if s > 0:
+                return h.__str__() + 'h ' + m.__str__() + 'm ' + s.__str__() + 's'
+            else:
+                return h.__str__() + 'h ' + m.__str__() + 'm'
+        else:
+            if s > 0:
+                return h.__str__() + 'h ' + s.__str__() + 's'
+            else:
+                return h.__str__() + 'h'
+    else:
+        if m > 0:
+            if s > 0:
+                return m.__str__() + 'm ' + s.__str__() + 's'
+            else:
+                return m.__str__() + 'm'
+        else:
+            return s.__str__() + 's'
