@@ -3,7 +3,7 @@ Exercise 21 : Validate Date
 """
 
 
-def is_valid_date(param1, param2, param3):
+def is_valid_date(year, month, day):
     """
     Check if a given date is valid.
 
@@ -16,7 +16,45 @@ def is_valid_date(param1, param2, param3):
         bool: True if the date is valid, False otherwise.
     """
     # important to import here
-    from src.sol20 import is_leap_year
+    from src.ex20 import is_leap_year
 
-    # TODO : complete this
-    pass
+    # FIX : complete this
+    if is_leap_year(year) is True:
+        if month in range(1, 13):
+            if month == 2:
+                if day in range(1, 30):
+                    return True
+                else:
+                    return False
+            if month in [4, 6, 9, 11]:
+                if day in range(1, 31):
+                    return True
+                else:
+                    return False
+            else:
+                if day in range(1, 32):
+                    return True
+                else:
+                    return False
+        else:
+            return False
+    else:
+        if month in range(1, 13):
+            if month == 2:
+                if day in range(1, 29):
+                    return True
+                else:
+                    return False
+            if month in [4, 6, 9, 11]:
+                if day in range(1, 31):
+                    return True
+                else:
+                    return False
+            else:
+                if day in range(1, 32):
+                    return True
+                else:
+                    return False
+        else:
+            return False
+# %%
