@@ -21,7 +21,7 @@ def bottles_of_beer(bottle):
     Returns:
         str: The repeated lyrics of bottles of beer on the wall.
     """
-    # TODO : complete this
+    # FIX : complete this
     if bottle > 1:
         return (str(bottle) + ' bottles of beer on the wall,\n' +
                 str(bottle) + ' bottles of beer.\nTake one down, pass it around,\n' +
