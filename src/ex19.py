@@ -12,7 +12,7 @@ ALL_CHARS = LOWER_LETTERS + UPPER_LETTERS + NUMBERS + SPECIAL
 
 
 def gen_password(char_num):
-    # TODO : complete this
+    # FIX : complete this
     password = []
     if char_num < 12:
         char_num = 12
